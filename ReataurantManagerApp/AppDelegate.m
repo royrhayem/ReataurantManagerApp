@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import "ViewController.h"
+#import "MainSelectionViewController.h"
 
 @interface AppDelegate ()
 
@@ -15,8 +17,22 @@
 @implementation AppDelegate
 
 
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+{
+    UIWindow *window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    
+    MainSelectionViewController *viewController = [[MainSelectionViewController alloc] initMainSelection];
+    
+    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:viewController];
+    
+    [window setRootViewController:nav];
+    
+    [window makeKeyAndVisible];
+    
+    [self setWindow:window];
+        
     return YES;
 }
 

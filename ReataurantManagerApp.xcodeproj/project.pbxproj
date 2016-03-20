@@ -9,11 +9,13 @@
 /* Begin PBXBuildFile section */
 		65D34AC81C9EF1F500EF4E3A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 65D34AC71C9EF1F500EF4E3A /* main.m */; };
 		65D34ACB1C9EF1F500EF4E3A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 65D34ACA1C9EF1F500EF4E3A /* AppDelegate.m */; };
-		65D34ACE1C9EF1F500EF4E3A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65D34ACD1C9EF1F500EF4E3A /* ViewController.m */; };
-		65D34AD11C9EF1F500EF4E3A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65D34ACF1C9EF1F500EF4E3A /* Main.storyboard */; };
 		65D34AD41C9EF1F500EF4E3A /* ReataurantManagerApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 65D34AD21C9EF1F500EF4E3A /* ReataurantManagerApp.xcdatamodeld */; };
 		65D34AD61C9EF1F500EF4E3A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65D34AD51C9EF1F500EF4E3A /* Assets.xcassets */; };
 		65D34AD91C9EF1F500EF4E3A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65D34AD71C9EF1F500EF4E3A /* LaunchScreen.storyboard */; };
+		65D34AE41C9EF27F00EF4E3A /* MainSelectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65D34AE21C9EF27F00EF4E3A /* MainSelectionViewController.m */; };
+		65D34AE51C9EF27F00EF4E3A /* MainSelectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65D34AE31C9EF27F00EF4E3A /* MainSelectionViewController.xib */; };
+		65D34AEA1C9EF96700EF4E3A /* FunZoneLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 65D34AE81C9EF96700EF4E3A /* FunZoneLogo.png */; };
+		65D34AEB1C9EF96700EF4E3A /* SportsZoneLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 65D34AE91C9EF96700EF4E3A /* SportsZoneLogo.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,13 +23,15 @@
 		65D34AC71C9EF1F500EF4E3A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		65D34AC91C9EF1F500EF4E3A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		65D34ACA1C9EF1F500EF4E3A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		65D34ACC1C9EF1F500EF4E3A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		65D34ACD1C9EF1F500EF4E3A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		65D34AD01C9EF1F500EF4E3A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		65D34AD31C9EF1F500EF4E3A /* ReataurantManagerApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ReataurantManagerApp.xcdatamodel; sourceTree = "<group>"; };
 		65D34AD51C9EF1F500EF4E3A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		65D34AD81C9EF1F500EF4E3A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		65D34ADA1C9EF1F500EF4E3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		65D34AE11C9EF27F00EF4E3A /* MainSelectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainSelectionViewController.h; path = MainSelectionView/MainSelectionViewController.h; sourceTree = "<group>"; };
+		65D34AE21C9EF27F00EF4E3A /* MainSelectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainSelectionViewController.m; path = MainSelectionView/MainSelectionViewController.m; sourceTree = "<group>"; };
+		65D34AE31C9EF27F00EF4E3A /* MainSelectionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MainSelectionViewController.xib; path = MainSelectionView/MainSelectionViewController.xib; sourceTree = "<group>"; };
+		65D34AE81C9EF96700EF4E3A /* FunZoneLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = FunZoneLogo.png; path = Images/Logos/FunZoneLogo.png; sourceTree = "<group>"; };
+		65D34AE91C9EF96700EF4E3A /* SportsZoneLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = SportsZoneLogo.png; path = Images/Logos/SportsZoneLogo.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,11 +64,10 @@
 		65D34AC51C9EF1F500EF4E3A /* ReataurantManagerApp */ = {
 			isa = PBXGroup;
 			children = (
+				65D34AE61C9EF94C00EF4E3A /* Images */,
+				65D34AE01C9EF24D00EF4E3A /* MainSelectionView */,
 				65D34AC91C9EF1F500EF4E3A /* AppDelegate.h */,
 				65D34ACA1C9EF1F500EF4E3A /* AppDelegate.m */,
-				65D34ACC1C9EF1F500EF4E3A /* ViewController.h */,
-				65D34ACD1C9EF1F500EF4E3A /* ViewController.m */,
-				65D34ACF1C9EF1F500EF4E3A /* Main.storyboard */,
 				65D34AD51C9EF1F500EF4E3A /* Assets.xcassets */,
 				65D34AD71C9EF1F500EF4E3A /* LaunchScreen.storyboard */,
 				65D34ADA1C9EF1F500EF4E3A /* Info.plist */,
@@ -80,6 +83,33 @@
 				65D34AC71C9EF1F500EF4E3A /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		65D34AE01C9EF24D00EF4E3A /* MainSelectionView */ = {
+			isa = PBXGroup;
+			children = (
+				65D34AE11C9EF27F00EF4E3A /* MainSelectionViewController.h */,
+				65D34AE21C9EF27F00EF4E3A /* MainSelectionViewController.m */,
+				65D34AE31C9EF27F00EF4E3A /* MainSelectionViewController.xib */,
+			);
+			name = MainSelectionView;
+			sourceTree = "<group>";
+		};
+		65D34AE61C9EF94C00EF4E3A /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				65D34AE71C9EF95500EF4E3A /* Logos */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		65D34AE71C9EF95500EF4E3A /* Logos */ = {
+			isa = PBXGroup;
+			children = (
+				65D34AE81C9EF96700EF4E3A /* FunZoneLogo.png */,
+				65D34AE91C9EF96700EF4E3A /* SportsZoneLogo.png */,
+			);
+			name = Logos;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,9 +169,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65D34AEA1C9EF96700EF4E3A /* FunZoneLogo.png in Resources */,
+				65D34AEB1C9EF96700EF4E3A /* SportsZoneLogo.png in Resources */,
 				65D34AD91C9EF1F500EF4E3A /* LaunchScreen.storyboard in Resources */,
 				65D34AD61C9EF1F500EF4E3A /* Assets.xcassets in Resources */,
-				65D34AD11C9EF1F500EF4E3A /* Main.storyboard in Resources */,
+				65D34AE51C9EF27F00EF4E3A /* MainSelectionViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -153,7 +185,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				65D34AD41C9EF1F500EF4E3A /* ReataurantManagerApp.xcdatamodeld in Sources */,
-				65D34ACE1C9EF1F500EF4E3A /* ViewController.m in Sources */,
+				65D34AE41C9EF27F00EF4E3A /* MainSelectionViewController.m in Sources */,
 				65D34ACB1C9EF1F500EF4E3A /* AppDelegate.m in Sources */,
 				65D34AC81C9EF1F500EF4E3A /* main.m in Sources */,
 			);
@@ -162,14 +194,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		65D34ACF1C9EF1F500EF4E3A /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				65D34AD01C9EF1F500EF4E3A /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		65D34AD71C9EF1F500EF4E3A /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -268,6 +292,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ReataurantManagerApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = test.ReataurantManagerApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -279,6 +304,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ReataurantManagerApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = test.ReataurantManagerApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";

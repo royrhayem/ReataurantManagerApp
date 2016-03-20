@@ -7,21 +7,36 @@
 //
 
 #import "ViewController.h"
+#import "MainSelectionViewController.h"
 
 @interface ViewController ()
+
+@property (nonatomic, strong) IBOutlet UIButton *goToButton;
 
 @end
 
 @implementation ViewController
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    [self initGoToButton];
 }
 
-- (void)didReceiveMemoryWarning {
+- (void)initGoToButton
+{
+    [_goToButton addTarget:self action:@selector(goToSelectionView) forControlEvents:UIControlEventTouchUpInside];
+}
+
+- (void)goToSelectionView
+{
+    MainSelectionViewController *mainView = [[MainSelectionViewController alloc] initMainSelection];
+    [self.navigationController pushViewController:mainView animated:YES];
+}
+
+- (void)didReceiveMemoryWarning
+{
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 @end
