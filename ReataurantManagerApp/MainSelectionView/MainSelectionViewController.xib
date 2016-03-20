@@ -18,11 +18,11 @@
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oFc-Dg-bs0">
-                    <rect key="frame" x="240" y="193" width="200" height="200"/>
+                    <rect key="frame" x="240" y="223" width="200" height="200"/>
                     <color key="backgroundColor" red="0.97254901959999995" green="0.96078431369999995" blue="0.98431372549999996" alpha="1" colorSpace="calibratedRGB"/>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="32w-Bf-mCU">
-                    <rect key="frame" x="585" y="193" width="200" height="200"/>
+                    <rect key="frame" x="585" y="223" width="200" height="200"/>
                     <color key="backgroundColor" red="0.97254901959999995" green="0.96078431369999995" blue="0.98431372549999996" alpha="1" colorSpace="calibratedRGB"/>
                 </button>
             </subviews>

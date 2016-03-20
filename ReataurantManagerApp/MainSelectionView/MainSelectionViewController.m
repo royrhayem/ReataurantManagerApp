@@ -7,6 +7,7 @@
 //
 
 #import "MainSelectionViewController.h"
+#import "NewReservationViewController.h"
 
 @interface MainSelectionViewController ()
 
@@ -62,7 +63,8 @@
 
 - (void)goToFirstBranch
 {
-    
+    NewReservationViewController *viewController = [[NewReservationViewController alloc] initWithBranch:@"FunZone"];
+    [self.navigationController pushViewController:viewController animated:YES];
 }
 
 - (void)didReceiveMemoryWarning
