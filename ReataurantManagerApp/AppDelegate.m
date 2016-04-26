@@ -32,6 +32,8 @@
     [window makeKeyAndVisible];
     
     [self setWindow:window];
+    
+    self.client = [MSClient clientWithApplicationURLString:@"https://restaurantmanager.azurewebsites.net"];
         
     return YES;
 }

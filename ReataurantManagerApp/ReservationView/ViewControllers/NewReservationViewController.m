@@ -8,8 +8,11 @@
 
 #import <QuartzCore/QuartzCore.h>
 #import "NewReservationViewController.h"
+#import "AllReservationsViewController.h"
 #import "CommonMacros.h"
 #import "Utilities.h"
+#import "AppDelegate.h"
+#import <WindowsAzureMobileServices/WindowsAzureMobileServices.h>
 
 @interface NewReservationViewController ()
 
@@ -29,6 +32,11 @@
 @property (strong, nonatomic) IBOutlet UILabel *numberOfKidsLabel;
 @property (strong, nonatomic) IBOutlet UILabel *noteLabel;
 
+@property (strong, nonatomic) IBOutlet UIButton *selectTableButton1;
+@property (strong, nonatomic) IBOutlet UIButton *selectTableButton2;
+@property (strong, nonatomic) IBOutlet UIButton *selectTableButton3;
+@property (strong, nonatomic) IBOutlet UIButton *selectTableButton4;
+
 @end
 
 @implementation NewReservationViewController
@@ -47,21 +55,80 @@
     
     self.view.backgroundColor = [UIColor whiteColor];
     
-    [self initDatePickerButton];
+    [self initButtons];
     [self initTextFields];
     [self initSteppers];
+    [self initNavigationBar];
+    [self test];
+}
+
+- (void)test
+{
+    MSClient *client = [(AppDelegate *) [[UIApplication sharedApplication] delegate] client];
+    NSDictionary *item = @{ @"text" : @"Awesome item" };
+    MSTable *itemTable = [client tableWithName:@"todoitem?ZUMO-API-VERSION=2.0.0"];
+   
+    //[itemTable insert:item completion:^(NSDictionary *insertedItem, NSError *error)
+
+    [itemTable delete:item completion:^(NSDictionary *insertedItem, NSError *error)
+    {
+        if (error)
+        {
+            NSLog(@"Error: %@", error);
+        }
+        else
+        {
+            NSLog(@"Item inserted, id: %@", [insertedItem objectForKey:@"id"]);
+        }
+    }];
+}
+
+- (void)initButtons
+{
+    [self initDatePickerButton];
+    [self initTableSelectionButtons :_selectTableButton1];
+    [self initTableSelectionButtons :_selectTableButton2];
+    [self initTableSelectionButtons :_selectTableButton3];
+    [self initTableSelectionButtons :_selectTableButton4];
+}
+
+- (void)initTableSelectionButtons :(UIButton *)button
+{
+    button.layer.cornerRadius  = 5.0f;
+    button.layer.borderWidth = 1.0f;
+    button.layer.borderColor = LIGHT_GRAY_COLOR.CGColor;
+    button.backgroundColor = [UIColor clearColor];
+    [button setTitle:@"Table" forState:UIControlStateNormal];
+    
+}
+
+- (void)initNavigationBar
+{
+    self.navigationItem.title = @"Add New Reservation";
+
+    UIBarButtonItem *saveButton = [[UIBarButtonItem alloc] initWithTitle:NSLocalizedString(@"RM_SAVE_BUTTON", @"")
+                                                                  style:UIBarButtonItemStyleBordered
+                                                                 target:self
+                                                                 action:@selector(doSave)];
+    self.navigationItem.rightBarButtonItem = saveButton;
+}
+
+- (void)doSave
+{
+    AllReservationsViewController *allReservationsViewController = [[AllReservationsViewController alloc] initWithReservationsList:nil];
+    [self.navigationController pushViewController:allReservationsViewController animated:YES];
 }
 
 - (void)initSteppers
 {
-    _adultsStepper.value = 1;
+    _adultsStepper.value = 0;
     _adultsStepper.minimumValue = 0;
     _adultsStepper.continuous = YES;
     [_adultsStepper addTarget:self action:@selector(incrementValue:) forControlEvents:UIControlEventTouchDown];
     [_adultsStepper addTarget:self action:@selector(cancelIncrement) forControlEvents:UIControlEventTouchUpInside];
     [_adultsStepper addTarget:self action:@selector(cancelIncrement) forControlEvents:UIControlEventTouchUpOutside];
 
-    _kidsStepper.value = 1;
+    _kidsStepper.value = 0;
     _kidsStepper.minimumValue = 0;
     _kidsStepper.continuous = YES;
     [_kidsStepper addTarget:self action:@selector(incrementValue:) forControlEvents:UIControlEventTouchDown];
@@ -110,6 +177,9 @@
     _numberOfAdultsTextField.layer.borderWidth = 0.7f;
     _numberOfKidsTextField.layer.borderWidth = 0.7f;
     _noteTextArea.layer.borderWidth = 0.7f;
+    
+    _numberOfAdultsTextField.text = @"0";
+    _numberOfKidsTextField.text = @"0";
 }
 
 - (void)initDatePickerPopover

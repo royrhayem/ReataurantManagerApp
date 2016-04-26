@@ -11,6 +11,13 @@
 		652AB9131C9F038D0077C6D9 /* NewReservationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 652AB9111C9F038D0077C6D9 /* NewReservationViewController.xib */; };
 		652AB91B1C9F2D540077C6D9 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 652AB91D1C9F2D540077C6D9 /* Localizable.strings */; };
 		652AB9221C9F52E20077C6D9 /* Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 652AB9211C9F52E20077C6D9 /* Utilities.m */; };
+		6567DEA11CA435B800798F82 /* ReservationLocal.m in Sources */ = {isa = PBXBuildFile; fileRef = 6567DEA01CA435B800798F82 /* ReservationLocal.m */; };
+		658A8FE01CCF9E8C0042629D /* WindowsAzureMobileServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 658A8FDF1CCF9E8C0042629D /* WindowsAzureMobileServices.framework */; };
+		65BF005B1CA5712100A9CF8F /* AllReservationsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65BF00591CA5712100A9CF8F /* AllReservationsViewController.m */; };
+		65BF005C1CA5712100A9CF8F /* AllReservationsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65BF005A1CA5712100A9CF8F /* AllReservationsViewController.xib */; };
+		65BF00671CA57BD100A9CF8F /* ReservationTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 65BF00651CA57BD100A9CF8F /* ReservationTableViewCell.m */; };
+		65BF00681CA57BD100A9CF8F /* ReservationTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65BF00661CA57BD100A9CF8F /* ReservationTableViewCell.xib */; };
+		65BF006A1CA57C0300A9CF8F /* DeleteIconRed.png in Resources */ = {isa = PBXBuildFile; fileRef = 65BF00691CA57C0300A9CF8F /* DeleteIconRed.png */; };
 		65D34AC81C9EF1F500EF4E3A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 65D34AC71C9EF1F500EF4E3A /* main.m */; };
 		65D34ACB1C9EF1F500EF4E3A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 65D34ACA1C9EF1F500EF4E3A /* AppDelegate.m */; };
 		65D34AD41C9EF1F500EF4E3A /* ReataurantManagerApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 65D34AD21C9EF1F500EF4E3A /* ReataurantManagerApp.xcdatamodeld */; };
@@ -30,6 +37,16 @@
 		652AB91F1C9F33880077C6D9 /* CommonMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CommonMacros.h; path = Common/CommonMacros.h; sourceTree = "<group>"; };
 		652AB9201C9F52E20077C6D9 /* Utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Utilities.h; path = Common/Utilities.h; sourceTree = "<group>"; };
 		652AB9211C9F52E20077C6D9 /* Utilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Utilities.m; path = Common/Utilities.m; sourceTree = "<group>"; };
+		6567DE9F1CA435B800798F82 /* ReservationLocal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ReservationLocal.h; path = Objects/ReservationLocal.h; sourceTree = "<group>"; };
+		6567DEA01CA435B800798F82 /* ReservationLocal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ReservationLocal.m; path = Objects/ReservationLocal.m; sourceTree = "<group>"; };
+		658A8FDF1CCF9E8C0042629D /* WindowsAzureMobileServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WindowsAzureMobileServices.framework; path = ReataurantManagerApp/Frameworks/WindowsAzureMobileServices.framework; sourceTree = "<group>"; };
+		65BF00581CA5712100A9CF8F /* AllReservationsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AllReservationsViewController.h; path = ReservationView/ViewControllers/AllReservationsViewController.h; sourceTree = "<group>"; };
+		65BF00591CA5712100A9CF8F /* AllReservationsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AllReservationsViewController.m; path = ReservationView/ViewControllers/AllReservationsViewController.m; sourceTree = "<group>"; };
+		65BF005A1CA5712100A9CF8F /* AllReservationsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AllReservationsViewController.xib; path = ReservationView/ViewControllers/AllReservationsViewController.xib; sourceTree = "<group>"; };
+		65BF00641CA57BD100A9CF8F /* ReservationTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ReservationTableViewCell.h; path = ReservationView/CustomViews/ReservationTableViewCell.h; sourceTree = "<group>"; };
+		65BF00651CA57BD100A9CF8F /* ReservationTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ReservationTableViewCell.m; path = ReservationView/CustomViews/ReservationTableViewCell.m; sourceTree = "<group>"; };
+		65BF00661CA57BD100A9CF8F /* ReservationTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ReservationTableViewCell.xib; path = ReservationView/CustomViews/ReservationTableViewCell.xib; sourceTree = "<group>"; };
+		65BF00691CA57C0300A9CF8F /* DeleteIconRed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = DeleteIconRed.png; path = Images/Icons/DeleteIconRed.png; sourceTree = "<group>"; };
 		65D34AC31C9EF1F500EF4E3A /* ReataurantManagerApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReataurantManagerApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		65D34AC71C9EF1F500EF4E3A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		65D34AC91C9EF1F500EF4E3A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -50,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				658A8FE01CCF9E8C0042629D /* WindowsAzureMobileServices.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,6 +78,7 @@
 			isa = PBXGroup;
 			children = (
 				652AB90D1C9F030F0077C6D9 /* ViewControllers */,
+				65BF00621CA5771500A9CF8F /* CustomViews */,
 			);
 			name = ReservationView;
 			sourceTree = "<group>";
@@ -70,6 +89,9 @@
 				652AB90F1C9F038D0077C6D9 /* NewReservationViewController.h */,
 				652AB9101C9F038D0077C6D9 /* NewReservationViewController.m */,
 				652AB9111C9F038D0077C6D9 /* NewReservationViewController.xib */,
+				65BF00581CA5712100A9CF8F /* AllReservationsViewController.h */,
+				65BF00591CA5712100A9CF8F /* AllReservationsViewController.m */,
+				65BF005A1CA5712100A9CF8F /* AllReservationsViewController.xib */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -92,9 +114,45 @@
 			name = Common;
 			sourceTree = "<group>";
 		};
+		6567DE9E1CA4339D00798F82 /* Objects */ = {
+			isa = PBXGroup;
+			children = (
+				6567DE9F1CA435B800798F82 /* ReservationLocal.h */,
+				6567DEA01CA435B800798F82 /* ReservationLocal.m */,
+			);
+			name = Objects;
+			sourceTree = "<group>";
+		};
+		658A8FD81CCF93100042629D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				658A8FDF1CCF9E8C0042629D /* WindowsAzureMobileServices.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		65BF00621CA5771500A9CF8F /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				65BF00641CA57BD100A9CF8F /* ReservationTableViewCell.h */,
+				65BF00651CA57BD100A9CF8F /* ReservationTableViewCell.m */,
+				65BF00661CA57BD100A9CF8F /* ReservationTableViewCell.xib */,
+			);
+			name = CustomViews;
+			sourceTree = "<group>";
+		};
+		65BF00631CA57B8800A9CF8F /* Icons */ = {
+			isa = PBXGroup;
+			children = (
+				65BF00691CA57C0300A9CF8F /* DeleteIconRed.png */,
+			);
+			name = Icons;
+			sourceTree = "<group>";
+		};
 		65D34ABA1C9EF1F500EF4E3A = {
 			isa = PBXGroup;
 			children = (
+				658A8FD81CCF93100042629D /* Frameworks */,
 				65D34AC51C9EF1F500EF4E3A /* ReataurantManagerApp */,
 				65D34AC41C9EF1F500EF4E3A /* Products */,
 			);
@@ -111,11 +169,12 @@
 		65D34AC51C9EF1F500EF4E3A /* ReataurantManagerApp */ = {
 			isa = PBXGroup;
 			children = (
+				6567DE9E1CA4339D00798F82 /* Objects */,
+				65D34AE01C9EF24D00EF4E3A /* MainSelectionView */,
+				652AB90C1C9F02EF0077C6D9 /* ReservationView */,
 				652AB91E1C9F33580077C6D9 /* Common */,
 				652AB9141C9F2B6D0077C6D9 /* LocalizableStrings */,
-				652AB90C1C9F02EF0077C6D9 /* ReservationView */,
 				65D34AE61C9EF94C00EF4E3A /* Images */,
-				65D34AE01C9EF24D00EF4E3A /* MainSelectionView */,
 				65D34AC91C9EF1F500EF4E3A /* AppDelegate.h */,
 				65D34ACA1C9EF1F500EF4E3A /* AppDelegate.m */,
 				65D34AD51C9EF1F500EF4E3A /* Assets.xcassets */,
@@ -148,6 +207,7 @@
 		65D34AE61C9EF94C00EF4E3A /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				65BF00631CA57B8800A9CF8F /* Icons */,
 				65D34AE71C9EF95500EF4E3A /* Logos */,
 			);
 			name = Images;
@@ -193,6 +253,12 @@
 				TargetAttributes = {
 					65D34AC21C9EF1F500EF4E3A = {
 						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = NH85M7K7QH;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -219,11 +285,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65BF00681CA57BD100A9CF8F /* ReservationTableViewCell.xib in Resources */,
 				652AB9131C9F038D0077C6D9 /* NewReservationViewController.xib in Resources */,
+				65BF006A1CA57C0300A9CF8F /* DeleteIconRed.png in Resources */,
 				65D34AEA1C9EF96700EF4E3A /* FunZoneLogo.png in Resources */,
 				65D34AEB1C9EF96700EF4E3A /* SportsZoneLogo.png in Resources */,
 				652AB91B1C9F2D540077C6D9 /* Localizable.strings in Resources */,
 				65D34AD91C9EF1F500EF4E3A /* LaunchScreen.storyboard in Resources */,
+				65BF005C1CA5712100A9CF8F /* AllReservationsViewController.xib in Resources */,
 				65D34AD61C9EF1F500EF4E3A /* Assets.xcassets in Resources */,
 				65D34AE51C9EF27F00EF4E3A /* MainSelectionViewController.xib in Resources */,
 			);
@@ -236,12 +305,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65BF00671CA57BD100A9CF8F /* ReservationTableViewCell.m in Sources */,
 				652AB9221C9F52E20077C6D9 /* Utilities.m in Sources */,
+				6567DEA11CA435B800798F82 /* ReservationLocal.m in Sources */,
 				65D34AD41C9EF1F500EF4E3A /* ReataurantManagerApp.xcdatamodeld in Sources */,
 				65D34AE41C9EF27F00EF4E3A /* MainSelectionViewController.m in Sources */,
 				65D34ACB1C9EF1F500EF4E3A /* AppDelegate.m in Sources */,
 				65D34AC81C9EF1F500EF4E3A /* main.m in Sources */,
 				652AB9121C9F038D0077C6D9 /* NewReservationViewController.m in Sources */,
+				65BF005B1CA5712100A9CF8F /* AllReservationsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -307,6 +379,10 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+				);
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -344,6 +420,10 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+				);
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -354,9 +434,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ReataurantManagerApp/Frameworks",
+				);
 				INFOPLIST_FILE = ReataurantManagerApp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"$(inherited)",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = test.ReataurantManagerApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -366,9 +454,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ReataurantManagerApp/Frameworks",
+				);
 				INFOPLIST_FILE = ReataurantManagerApp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"$(inherited)",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = test.ReataurantManagerApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
